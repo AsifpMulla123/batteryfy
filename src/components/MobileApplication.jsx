@@ -1,23 +1,31 @@
 import React from "react";
-import { FaApple, FaGooglePlay, FaQrcode } from "react-icons/fa";
-import { FiActivity, FiCalendar, FiMapPin } from "react-icons/fi";
+import {
+  FaApple,
+  FaCalendarCheck,
+  FaGooglePlay,
+  FaQrcode,
+  FaRoute,
+} from "react-icons/fa";
 
+import { IoSpeedometer } from "react-icons/io5";
 import AppDownload from "../assets/AppDownload.png";
 
 function MobileApplication() {
   return (
-    <div className="min-h-screen bg-[#090d1f] text-white px-12">
+    <div className="min-h-screen bg-[#090d1f] text-white sm:px-12">
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between">
         {/* Left Content */}
         <div className="w-full md:w-1/2 space-y-10">
-          <div>
-            <div className="bg-[#1e3a8a] text-sm font-medium px-4 py-2 rounded-full w-fit mb-6">
-              MOBILE APP
+          <div className="flex items-center justify-center flex-col">
+            <div className="text-sky-500 text-sm font-medium px-4 py-2 rounded-full w-fit mb-6">
+              <span className="bg-[#1e2737] px-4 py-2 rounded-full">
+                MOBILE APP
+              </span>
             </div>
-            <h1 className="text-5xl font-bold mb-4">
+            <h1 className="text-3xl sm:text-5xl font-bold mb-4">
               Power in Your <span className="text-[#3b82f6]">Pocket</span>
             </h1>
-            <p className="text-gray-300 mb-8 max-w-lg">
+            <p className="text-gray-300 mb-8 max-w-lg text-center">
               Download the Batteryfy app to manage your retrofitting process,
               book charging slots, and shop for eco-products—all from your
               smartphone.
@@ -27,11 +35,13 @@ function MobileApplication() {
           {/* Features */}
           <div className="space-y-8">
             <div className="flex items-start gap-5">
-              <div className="bg-[#1e3a8a] p-3 rounded-lg">
-                <FiMapPin className="text-xl" />
+              <div className="bg-gray-900 p-4 rounded-full">
+                <FaRoute className="text-xl text-sky-500" />
               </div>
               <div>
-                <h3 className="font-bold text-lg">Find Charging Stations</h3>
+                <h3 className="font-bold text-base sm:text-lg pb-2">
+                  Find Charging Stations
+                </h3>
                 <p className="text-gray-400">
                   Locate and navigate to the nearest available charging stations
                   in real-time.
@@ -40,11 +50,13 @@ function MobileApplication() {
             </div>
 
             <div className="flex items-start gap-5">
-              <div className="bg-[#1e3a8a] p-3 rounded-lg">
-                <FiCalendar className="text-xl" />
+              <div className="bg-gray-900 px-4 py-4 rounded-full">
+                <FaCalendarCheck className="text-xl text-green-500" />
               </div>
               <div>
-                <h3 className="font-bold text-lg">Book & Manage Slots</h3>
+                <h3 className="font-bold text-base sm:text-lg pb-2">
+                  Book & Manage Slots
+                </h3>
                 <p className="text-gray-400">
                   Reserve charging slots in advance and receive notifications
                   when it's time to charge.
@@ -53,11 +65,13 @@ function MobileApplication() {
             </div>
 
             <div className="flex items-start gap-5">
-              <div className="bg-[#1e3a8a] p-3 rounded-lg">
-                <FiActivity className="text-xl" />
+              <div className="bg-gray-900 p-4 rounded-full">
+                <IoSpeedometer className="text-xl text-purple-500" />
               </div>
               <div>
-                <h3 className="font-bold text-lg">Track Retrofit Progress</h3>
+                <h3 className="font-bold text-base sm:text-lg pb-2">
+                  Track Retrofit Progress
+                </h3>
                 <p className="text-gray-400">
                   Monitor your vehicle's conversion status and receive updates
                   at every stage.

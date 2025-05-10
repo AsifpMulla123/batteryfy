@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className=" hover:text-gray-900 focus:outline-none text-white"
+              className=" hover:text-sky-900 focus:outline-none text-white"
             >
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
@@ -65,21 +65,24 @@ export default function Navbar() {
         <div className={`md:hidden ${isOpen ? "block" : "hidden"} mt-4 pb-4`}>
           <div className="flex flex-col space-y-4">
             <a
-              href="/retrofit"
+              href="/retrofication"
               className="text-white hover:text-[#2e96ff] py-2"
             >
               Retrofit
             </a>
             <a
-              href="/charging"
+              href="#charging"
               className="text-white hover:text-[#2e96ff] py-2"
             >
               Charging
             </a>
-            <a href="/shop" className="text-gray-600 hover:text-[#2e96ff] py-2">
+            <a
+              href="#products"
+              className="text-white hover:text-[#2e96ff] py-2"
+            >
               Shop
             </a>
-            <a href="/impact" className="text-white hover:text-[#2e96ff] py-2">
+            <a href="#impact" className="text-white hover:text-[#2e96ff] py-2">
               Impact
             </a>
             <a

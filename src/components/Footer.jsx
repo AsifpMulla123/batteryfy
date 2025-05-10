@@ -5,7 +5,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import { IoFlashOutline } from "react-icons/io5";
+import Logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
@@ -16,10 +16,7 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="col-span-1">
             <div className="flex items-center mb-4">
-              <div className="bg-blue-600 p-2 rounded-md mr-2">
-                <IoFlashOutline className="text-white text-xl" />
-              </div>
-              <span className="text-white text-xl font-bold">Batteryfy</span>
+              <img src={Logo} alt="Batteryfy Logo" className="w-auto h-14"/>
             </div>
             <p className="text-sm leading-relaxed">
               Transforming the future of mobility through innovative electric

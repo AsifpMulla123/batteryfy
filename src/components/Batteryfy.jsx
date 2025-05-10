@@ -1,32 +1,35 @@
 import React from "react";
-import { BsShop } from "react-icons/bs";
-import { FaArrowRight, FaBriefcase, FaCheck } from "react-icons/fa";
+import { FaArrowRight, FaCheck, FaStore } from "react-icons/fa";
 import { MdEvStation } from "react-icons/md";
+import { TbBatteryAutomotiveFilled } from "react-icons/tb";
 import BatteryProduct from "../assets/BatteryProducts.png";
 import Retrofit from "../assets/Retrofit.png";
 import ChargingStation from "../assets/chargingStation.png";
 
 export default function Batteryfy() {
   return (
-    <div className="bg-gray-950 text-white p-8 min-h-screen flex flex-col items-center">
+    <div className="bg-gray-950 text-white px-8 pb-8 min-h-screen flex flex-col items-center">
       <div className="max-w-5xl w-full text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4">What is Batteryfy?</h1>
-        <p className="text-lg">
-          <span>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          What is Batteryfy?
+        </h1>
+        <p className="text-lg text-center">
+          <span className="text-center">
             Our revolutionary platform offers three integrated solutions to
-            power the future of
+            power the future of 
           </span>
-          <span className="block">sustainable transportation.</span>
+          <span className="inline sm:block text-center">
+            {" "} sustainable transportation.
+          </span>
         </p>
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 max-w-full">
-        {/* <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl"> */}
         {/* Retrofit Vehicles */}
         <div className="bg-white bg-opacity-5 rounded-lg p-6 flex flex-col shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
           <div className="mb-4">
-            <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center">
-              <FaBriefcase className="text-blue-500 text-3xl" />
+            <div className="bg-gray-800 w-16 h-16 rounded-lg flex items-center justify-center">
+              <TbBatteryAutomotiveFilled className="text-blue-500 text-3xl" />
             </div>
           </div>
           <h2 className="text-xl font-bold mb-4">Retrofit Vehicles</h2>
@@ -37,7 +40,7 @@ export default function Batteryfy() {
               className="w-full h-3/4 object-cover rounded"
             />
           </div>
-          <div className="flex flex-col gap-2 mb-6 -mt-16">
+          <div className="flex flex-col gap-2 mb-6 -mt-10 sm:-mt-16">
             <div className="flex items-center gap-2">
               <FaCheck className="text-teal-400 text-sm" />
               <span>Any vehicle: Bike to Trucks</span>
@@ -64,8 +67,8 @@ export default function Batteryfy() {
         {/* EV Charging Stations */}
         <div className="bg-white bg-opacity-5 rounded-lg p-6 flex flex-col shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
           <div className="mb-4">
-            <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center">
-              <MdEvStation className="text-blue-500 text-3xl" />
+            <div className="bg-gray-800 w-16 h-16 rounded-lg flex items-center justify-center">
+              <MdEvStation className="text-green-500 text-3xl" />
             </div>
           </div>
           <h2 className="text-xl font-bold mb-4">EV Charging Stations</h2>
@@ -76,7 +79,7 @@ export default function Batteryfy() {
               className="w-full h-3/4 object-cover rounded"
             />
           </div>
-          <div className="flex flex-col gap-2 mb-6 -mt-16">
+          <div className="flex flex-col gap-2 mb-6 -mt-10 sm:-mt-16">
             <div className="flex items-center gap-2">
               <FaCheck className="text-teal-400 text-sm" />
               <span>Real-time booking</span>
@@ -103,8 +106,8 @@ export default function Batteryfy() {
         {/* Battery Product Store */}
         <div className="bg-white bg-opacity-5 rounded-lg p-6 flex flex-col shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
           <div className="mb-4">
-            <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center">
-              <BsShop className="text-blue-500 text-3xl" />
+            <div className="bg-gray-800 w-16 h-16 rounded-lg flex items-center justify-center">
+              <FaStore className="text-purple-500 text-3xl" />
             </div>
           </div>
           <h2 className="text-xl font-bold mb-4">Battery Product Store</h2>
@@ -115,7 +118,7 @@ export default function Batteryfy() {
               className="w-full h-3/4 object-cover rounded"
             />
           </div>
-          <div className="flex flex-col gap-2 mb-6 -mt-16">
+          <div className="flex flex-col gap-2 mb-6  -mt-10 sm:-mt-16">
             <div className="flex items-center gap-2">
               <FaCheck className="text-teal-400 text-sm" />
               <span>Verified eco-gadgets</span>

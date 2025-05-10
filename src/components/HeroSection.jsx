@@ -19,8 +19,8 @@ export default function HeroSection() {
               </span>
             </h1>
 
-            <p className="text-lg text-gray-400 mb-8 mt-4">
-              Convert vehicles. Charge Anywhere. Shop Eco-Tech.
+            <p className="text-lg text-gray-300 mb-8 mt-4">
+              Your ride, reimagined. Your future,battery-powered.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -31,15 +31,19 @@ export default function HeroSection() {
                 </button>
               </a>
 
-              <button className="group flex items-center bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-full shadow transition-colors duration-200">
-                <FaBolt className=" text-[#2e96ff] mr-2 w-5 h-5 transition-colors duration-200 group-hover:text-green-600" />
-                Find Charging Station
-              </button>
+              <a href="#charging">
+                <button className="group flex items-center bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-full shadow transition-colors duration-200">
+                  <FaBolt className=" text-[#2e96ff] mr-2 w-5 h-5 transition-colors duration-200 group-hover:text-green-600" />
+                  Find Charging Station
+                </button>
+              </a>
 
-              <button className="group flex items-center bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-full shadow transition-colors duration-200">
-                <FaShoppingCart className=" text-[#2e96ff] mr-2 w-5 h-5 transition-colors duration-200 group-hover:text-green-600" />
-                Shop Battery Products
-              </button>
+              <a href="#products">
+                <button className="group flex items-center bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-full shadow transition-colors duration-200">
+                  <FaShoppingCart className=" text-[#2e96ff] mr-2 w-5 h-5 transition-colors duration-200 group-hover:text-green-600" />
+                  Shop Battery Products
+                </button>
+              </a>
             </div>
           </div>
 
@@ -49,7 +53,7 @@ export default function HeroSection() {
               <img
                 src={Hero}
                 alt="Electric Vehicle with Blue Energy Visualization"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
