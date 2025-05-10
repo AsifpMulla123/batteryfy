@@ -38,7 +38,7 @@ import { IoMdHome } from "react-icons/io";
 import mapImages from "../assets/mapImages.png";
 import Product1 from "../assets/Product1.png";
 import Product2 from "../assets/Product2.png";
-import Product3 from "../assets/Product3.png";
+import Product3 from "../assets/product3.png";
 import Product4 from "../assets/Product4.png";
 import RetroficationMain from "../assets/RetroficationMain.png";
 
